@@ -38,8 +38,9 @@ while True:
     if 1 <= menu <= len(drinks):
         print_menu_total_price(menu - 1)
     elif menu == len(drinks)+1:
-        random_index = random.randint(0, len(drinks)-1)
-        print(f'{drinks[random_index]}에 어울리는 안주는 {snacks[random_index]} 입니다')
+        # random_index = random.randint(0, len(drinks)-1)
+        # print(f'{drinks[random_index]}에 어울리는 안주는 {snacks[random_index]} 입니다')
+        print_menu_total_price(random.randint(0, len(drinks)-1))
     elif menu == len(drinks)+2:
         print(f'다음에 또 오세요')
         break
@@ -47,5 +48,5 @@ while True:
 
 for k in range(len(drinks)):
     if amounts[k] != 0:
-        print(f"주류명 : {drinks[k]} 수량 : {amounts[k]} 단가 : {prices[k]}  소계 : {prices[k] * amounts[k]}")
+        print(f"주류명 : {drinks[k]}\n 수량 : {amounts[k]:>2} 단가 : {prices[k]:>6}  소계 : {prices[k] * amounts[k]:>5}")
 print(f"총 금액 : {total_price}원")
