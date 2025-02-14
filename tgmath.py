@@ -20,7 +20,7 @@ def tg_fibonacci_recursion(n) -> int:
     elif n == 1:
         return 1
     else:
-        return fibonacci_recursion(n-2) + fibonacci_recursion(n-1)
+        return tg_fibonacci_recursion(n-2) + tg_fibonacci_recursion(n-1)
 
 
 def tg_fibonacci_loop(n) -> int:
