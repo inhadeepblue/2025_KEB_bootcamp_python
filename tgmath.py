@@ -36,3 +36,5 @@ def tg_fibonacci_loop(n) -> int:
     return n_list[n]
 
 #print(my_abs(-99), my_abs(19), my_abs(-9119))
+if __name__ != "__main__":
+    print("tgmath.py 파일을 실행하셨습니다")
